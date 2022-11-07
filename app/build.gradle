@@ -1,15 +1,21 @@
 plugins {
     id 'com.android.application'
 }
-
+ext {
+    // Provide your own coordinates here
+    PUBLISH_GROUP_ID = 'io.github.handharbeni'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'photoview-module'
+}
+group='io.github.handharbeni'
 android {
     namespace 'io.github.handharbeni.photoview'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "io.github.handharbeni.photoview"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
